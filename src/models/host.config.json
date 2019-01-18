@@ -1,0 +1,36 @@
+{
+  "name": "Host",
+  "description": "A Host model",
+  "base": "Base",
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "description": "'Host ID'"
+    },
+    "hostname": {
+      "type": "string",
+      "required": "true",
+      "description": "'Hostname'"
+    },
+    "ip": {
+      "type": "string",
+      "description": "'IP address'"
+    },
+    "status": {
+      "type": "string",
+      "description": "'Current status of host'",
+      "required": "true"
+    },
+    "userId": {
+      "type": "string",
+      "description": "'ID of owner user'",
+      "required": "true"
+    },
+    "specificationId": {
+      "type": "string",
+      "description": "'ID of provider specification'",
+      "required": "true"
+    }
+  }
+}

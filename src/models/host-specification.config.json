@@ -1,0 +1,43 @@
+{
+  "name": "HostSpecification",
+  "description": "A HostSpecification model",
+  "base": "Base",
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "description": "'Host specification ID'"
+    },
+    "providerTypeId": {
+      "type": "string",
+      "description": "'ID of provider type'",
+      "required": "true"
+    },
+    "name": {
+      "type": "string",
+      "description": "'Specification name'",
+      "required": "true"
+    },
+    "cpus": {
+      "type": "number",
+      "description": "'Number of CPUs'",
+      "required": "true"
+    },
+    "memory": {
+      "type": "number",
+      "description": "'RAM (in megabytes)'",
+      "required": "true"
+    },
+    "disk": {
+      "type": "number",
+      "description": "'HDD (in gigabytes)'",
+      "required": "true"
+    },
+    "os": {
+      "type": "string",
+      "descirption": "'Operational system (name, version, architecture)'",
+      "required": "true",
+      "default": "'ubuntu-16-04-x64'"
+    }
+  }
+}

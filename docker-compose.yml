@@ -1,0 +1,13 @@
+version: '2'
+
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - '27017:27017'
+    volumes:
+      - data-volume:/data/db
+
+volumes:
+  data-volume:

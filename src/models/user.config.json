@@ -1,0 +1,17 @@
+{
+  "name": "User",
+  "description": "A User model",
+  "base": "Base",
+  "properties": {
+    "id": {
+      "type": "string",
+      "id": true,
+      "description": "'User ID'"
+    },
+    "displayName": {
+      "type": "string",
+      "required": "true",
+      "description": "'User displayed name'"
+    }
+  }
+}
